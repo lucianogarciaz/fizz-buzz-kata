@@ -7,7 +7,7 @@ type dataTest struct {
 	expected string
 }
 
-func Test_if_module_three_return_Fizz(t *testing.T) {
+func Test_Data(t *testing.T) {
 	for _, testData := range setUpData() {
 		if FizzBuzz(testData.input) != testData.expected {
 			t.Error("The expected value was: ", testData.expected, " instead ", testData.input)
