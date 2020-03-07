@@ -5,7 +5,7 @@ func FizzBuzz(number int) string {
 		return "FizzBuzz"
 	} else if isBuzz(number) {
 		return "Buzz"
-	} else if number%3 == 0 {
+	} else if isFizz(number) {
 		return "Fizz"
 	} else {
 		return ""
@@ -13,6 +13,13 @@ func FizzBuzz(number int) string {
 }
 func isBuzz(number int) bool {
 	if number%5 == 0 {
+		return true
+	} else {
+		return false
+	}
+}
+func isFizz(number int) bool {
+	if number%3 == 0 {
 		return true
 	} else {
 		return false
